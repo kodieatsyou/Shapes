@@ -1,0 +1,7 @@
+puts "Piano 1....Green"
+puts "Chemistry....Riggs"
+puts "Comp Sci....Padjen"
+puts "Algebra....Kruse"
+puts "English....Wheeler"
+puts "Gov....Modert"
+puts "Engineering....Storie"
