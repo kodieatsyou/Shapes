@@ -2,15 +2,18 @@ prompt = '> '
 def input
 		gets.chomp
 end
+def get_a_word(word_type)
+		puts "Enter a #{word_type}."
+end
 puts "Fill in the story!"
 
-puts "A Noun ", prompt
+get_a_word("noun")
 noun1 = input
 
-puts "Another Noun ", prompt
+get_a_word("noun")
 noun2 = input
 
-puts "A bodypart ", prompt
+get_a_word("body part")
 bodypart1 = input
 
 puts """
@@ -21,16 +24,16 @@ Then he died. The End
 
 puts "JK THERES MORE!"
 
-puts "A saying ", prompt
+get_a_word("saying")
 speech1 = input
 
-puts "Another noun ", prompt
+get_a_word("noun")
 noun3 = input
 
-puts "A verb ", prompt
+get_a_word("verb")
 verb1 = input
 
-puts "Another bodypart ", prompt
+get_a_word("bodypart")
 bodypart2 = input
 
 puts """
