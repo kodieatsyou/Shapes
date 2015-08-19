@@ -1,15 +1,17 @@
 prompt = '> '
-
+def input
+		gets.chomp
+end
 puts "Fill in the story!"
 
 puts "A Noun ", prompt
-noun1 = $stdin.gets.chomp
+noun1 = input
 
 puts "Another Noun ", prompt
-noun2 = $stdin.gets.chomp
+noun2 = input
 
 puts "A bodypart ", prompt
-bodypart1 = $stdin.gets.chomp
+bodypart1 = input
 
 puts """
 There was a #{noun1} he was on his way to the #{noun2} 
@@ -20,16 +22,16 @@ Then he died. The End
 puts "JK THERES MORE!"
 
 puts "A saying ", prompt
-speech1 = $stdin.gets.chomp
+speech1 = input
 
 puts "Another noun ", prompt
-noun3 = $stdin.gets.chomp
+noun3 = input
 
 puts "A verb ", prompt
-verb1 = $stdin.gets.chomp
+verb1 = input
 
 puts "Another bodypart ", prompt
-bodypart2 = $stdin.gets.chomp
+bodypart2 = input
 
 puts """
 The #{noun1} got up and looked into the stars and said, #{speech1}.
