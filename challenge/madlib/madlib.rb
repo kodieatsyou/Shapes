@@ -1,10 +1,12 @@
 def menu
-	puts"Choose a story (1 or 2!)"
+	puts"Choose a story (1, 2, or 3!)"
 	story_num = $stdin.gets.chomp.to_i
 	if story_num == 1
 		story1
 	elsif story_num == 2
 		story2
+	elsif story_num == 3
+		story3
 	elsif story_num != 1 || 2
 		menu
 	end
@@ -52,4 +54,18 @@ def story2
 	THE END!
 	"""
 end
+
+def story3
+	words = []
+	puts "Story 3!"
+
+	words.push(get_a_word("name"))
+	words.push(get_a_word("Bodypart"))
+
+	puts """
+	There was a man named #{words.shift} she likes
+	#{words.shift}
+	"""	
+end
+
 menu
