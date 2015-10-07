@@ -29,8 +29,8 @@ class Player
 	end
 
 	def move
-		@x += @x_val
-		@y += @y_val
+		@x += @vel_x
+		@y += @vel_y
 
 		@x %= 640
 		@y %= 480
